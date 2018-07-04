@@ -32,9 +32,13 @@
 
 \newcounter{numTD}
 \newtheorem{exercice}{Exercice}
+\newtheorem{methodologie}{M\'ethodologie}
+\newtheorem{correction}{Correction}
 %\newtheorem{probleme}{Probl\`eme}
 %\newtheorem{definition}{Definition}
 \newcommand{\exo}[1]{\setlength{\parskip}{0.pt}\begin{exercice} \emph{\textbf{- #1}} \end{exercice}}
+\newcommand{\meth}[1]{\setlength{\parskip}{0.pt}\begin{methodologie} \emph{\textbf{- #1}} \end{methodologie}}
+\newcommand{\sol}[1]{\setlength{\parskip}{0.pt}\begin{correction} \emph{\textbf{- #1}} \end{correction}}
 %\newcommand{\pb}[1]{\setlength{\parskip}{0.pt}\begin{probleme} \emph{\textbf{- #1}} \end{probleme}}
 %%% commande titre TD
 \newcommand{\titreTD}[2]{\addtocounter{numTD}{1}
@@ -95,13 +99,13 @@ UE Atomes et Mol\'ecules \\
 \include{periodique}
 \include{planche_slater}
 \include{planche_bohr}
-\include{planche_lewis}
 %\include{planche_vsepr}
 %\include{planche_hyb}
 %\include{planche_meso}
 \include{planche_s}
 \include{planche_om}
 \include{planche_wf}
+\include{planche_lewis}
 
 \cleardoublepage
 

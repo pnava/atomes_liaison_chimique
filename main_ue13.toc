@@ -1,0 +1,8 @@
+\select@language {french}
+\contentsline {section}{Tableau p\'eriodique}{2}
+\contentsline {section}{Mod\`ele de Slater}{6}
+\contentsline {section}{Mod\`ele de Bohr -- Notions de spectroscopies}{7}
+\contentsline {section}{Les structures de Lewis}{8}
+\contentsline {section}{Recouvrements entre Orbitales Atomiques}{9}
+\contentsline {section}{Orbitales Mol\'eculaire, combinaison d'Orbitales Atomiques}{10}
+\contentsline {section}{Mod\`ele ondulatoire}{14}

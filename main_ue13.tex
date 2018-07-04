@@ -1,7 +1,9 @@
 \documentclass[12pt,french,dvips]{report} 
 
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[OT1,T1]{fontenc}
+\usepackage{mdframed}
 \usepackage{graphicx}
 \usepackage{pstricks}
 \usepackage{amsmath}
@@ -15,6 +17,7 @@
 \usepackage{lscape}
 \usepackage{enumerate,comment,overcite}
 \usepackage{enumerate,overcite}
+\usepackage{pst-spectra}
 
 \graphicspath{{/home/paola/pres/logos/},
               {/home/paola/TEACH/ue13/2015_2016/td/figure/}}
@@ -34,8 +37,6 @@
 \newtheorem{exercice}{Exercice}
 \newtheorem{methodologie}{M\'ethodologie}
 \newtheorem{correction}{Correction}
-%\newtheorem{probleme}{Probl\`eme}
-%\newtheorem{definition}{Definition}
 \newcommand{\exo}[1]{\setlength{\parskip}{0.pt}\begin{exercice} \emph{\textbf{- #1}} \end{exercice}}
 \newcommand{\meth}[1]{\setlength{\parskip}{0.pt}\begin{methodologie} \emph{\textbf{- #1}} \end{methodologie}}
 \newcommand{\sol}[1]{\setlength{\parskip}{0.pt}\begin{correction} \emph{\textbf{- #1}} \end{correction}}

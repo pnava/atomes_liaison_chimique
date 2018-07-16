@@ -27,50 +27,74 @@ $1s$, $2s$ et $3s$. Commentez.
 \end{center}
 \clearpage
 
-\exo{Normation d'une fonction d'onde $-$ Repr\'esentation graphique}
+\exo{Mod\`ele de Bohr et mod\`ele quantique}
 
-L'\'etat fondamental de l'atome d'hydrog\`ene est d\'ecrit par la fonction d'onde~:
+Dans le mod\`ele de Bohr, l'\'electron est d\'ecrit par des orbites circulaires, 
+de rayon $r_n= \frac{n^2}{Z} a_0$ (avec $a_0=0.53$~\AA, $Z$ le num\'ero
+atomique et $n$ un entier).
+Ce mod\`ele est remplac\'e par le mod\`ele quantique, avec des orbitales \`a la place des orbites. Dans ce dernier
+mod\`ele on peut d\'efinir la densit\'e de probabilit\'e radiale. Celle-ci est trac\'ee en Figure~\ref{dens_prop} 
+pour l'orbitale 
+$1s$ de l'atome d'hydrog\`ene (on a trac\'e en gris\'e la zone o\`u la courbe est proche de son maximum).
 
-\[
-%\Psi_{1s}(r,\theta,\varphi)=N.e^{-r/a_0} \qquad \textrm{avec~}N\textrm{~scalaire}
-\begin{array}{rcl}
-\Psi_{1s}(r,\theta,\varphi) &=& R(r) Y(\theta,\varphi) \qquad \text{o\`u}\\[0.3cm]
-R(r)                        &=& N_r e^{-r/a_0}        \\
-Y(\theta,\varphi)           &=& N_{\theta,\varphi} f(\theta,\varphi) \qquad f(\theta,\varphi) = 1\\
-\end{array}
-\]
-avec $N_r$ et $N_{\theta,\varphi}$ scalaires.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=6cm]{figure/area_1s_3.eps}
+\caption{Densit\'e de probabilit\'e radiale pour l'orbitale $1s$.}
+\label{dens_prop}
+\end{center}
+\end{figure}
 
-\begin{enumerate}[\bf 1)]
-\item Sachant qu'en coordonn\'ees sph\'eriques l'\'el\'ement diff\'erentiel de volume s'\'ecrit
 
-$$
-dV=d\tau=r^2\sin{\theta}dr d\theta d\varphi
-$$
-
-et que l'ensemble de l'espace est d\'ecrit lorsque $r$ varie de $0$ \`a $+\infty$, 
-$\theta$ de $0$ \`a $\pi$ et $\varphi$ de $0$ \`a $2\pi$, \'ecrire l'expression de l'int\'egrale de 
-normalisation.\\
-
-\item \'Ecrire cette int\'egrale sous la forme d'un produit d'une int\'egrale angulaire~:
-\[ 
-N_{\theta,\varphi}^2 \int_0^\infty \int_0^{2\pi} f(\theta,\varphi) \sin{\theta} d\theta d\varphi
-\]
-et d'une int\'egrale radiale que vous det\'erminerez. Normer-les s\'eparemment.
-
-\textbf{On donne~:} $\displaystyle \int_0^{+\infty}r^ne^{-Ar}dr=\frac{n!}{A^{n+1}}$ 
-avec $n$, entier et $A$, r\'eel $> 0$.
-
-\item \'Ecrire la $\Psi_{1s}(r,\theta,\varphi)$ totale. 
-
-\item Rappeler les d\'efinitions de la probabilit\'e de pr\'esence et de la densit\'e 
-de probabilit\'e radiale. Donner l'expression de la densit\'e de probabilit\'e radiale 
-en fonction de la partie radiale $R_{n,l}$ d'une fonction d'onde.
-
-\item Pour la fonction d'onde $\Psi_{1s}$, repr\'esenter graphiquement la courbe donnant, 
-en fonction de $r/a_0$ dans l'intervalle $0 \leq r/a_0 \leq 5$, la densit\'e de 
-probabilit\'e radiale.
+\begin{enumerate}
+\item Commentez rapidement cette courbe (position du maximum, tendance à longue distance, valeur au niveau du noyau).
+\item Comparez les deux mod\`eles vis-\`a-vis de la trajectoire de l'\'electron autour du noyau. 
 \end{enumerate}
+
+%\exo{Normation d'une fonction d'onde $-$ Repr\'esentation graphique}
+%
+%L'\'etat fondamental de l'atome d'hydrog\`ene est d\'ecrit par la fonction d'onde~:
+%
+%\[
+%%\Psi_{1s}(r,\theta,\varphi)=N.e^{-r/a_0} \qquad \textrm{avec~}N\textrm{~scalaire}
+%\begin{array}{rcl}
+%\Psi_{1s}(r,\theta,\varphi) &=& R(r) Y(\theta,\varphi) \qquad \text{o\`u}\\[0.3cm]
+%R(r)                        &=& N_r e^{-r/a_0}        \\
+%Y(\theta,\varphi)           &=& N_{\theta,\varphi} f(\theta,\varphi) \qquad f(\theta,\varphi) = 1\\
+%\end{array}
+%\]
+%avec $N_r$ et $N_{\theta,\varphi}$ scalaires.
+%
+%\begin{enumerate}[\bf 1)]
+%\item Sachant qu'en coordonn\'ees sph\'eriques l'\'el\'ement diff\'erentiel de volume s'\'ecrit
+%
+%$$
+%dV=d\tau=r^2\sin{\theta}dr d\theta d\varphi
+%$$
+%
+%et que l'ensemble de l'espace est d\'ecrit lorsque $r$ varie de $0$ \`a $+\infty$, 
+%$\theta$ de $0$ \`a $\pi$ et $\varphi$ de $0$ \`a $2\pi$, \'ecrire l'expression de l'int\'egrale de 
+%normalisation.\\
+%
+%\item \'Ecrire cette int\'egrale sous la forme d'un produit d'une int\'egrale angulaire~:
+%\[ 
+%N_{\theta,\varphi}^2 \int_0^\infty \int_0^{2\pi} f(\theta,\varphi) \sin{\theta} d\theta d\varphi
+%\]
+%et d'une int\'egrale radiale que vous det\'erminerez. Normer-les s\'eparemment.
+%
+%\textbf{On donne~:} $\displaystyle \int_0^{+\infty}r^ne^{-Ar}dr=\frac{n!}{A^{n+1}}$ 
+%avec $n$, entier et $A$, r\'eel $> 0$.
+%
+%\item \'Ecrire la $\Psi_{1s}(r,\theta,\varphi)$ totale. 
+%
+%\item Rappeler les d\'efinitions de la probabilit\'e de pr\'esence et de la densit\'e 
+%de probabilit\'e radiale. Donner l'expression de la densit\'e de probabilit\'e radiale 
+%en fonction de la partie radiale $R_{n,l}$ d'une fonction d'onde.
+%
+%\item Pour la fonction d'onde $\Psi_{1s}$, repr\'esenter graphiquement la courbe donnant, 
+%en fonction de $r/a_0$ dans l'intervalle $0 \leq r/a_0 \leq 5$, la densit\'e de 
+%probabilit\'e radiale.
+%\end{enumerate}
 
 
 \exo{Repr\'esentation d'orbitale}

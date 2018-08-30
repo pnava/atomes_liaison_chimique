@@ -6,11 +6,15 @@
 
 \textit{Pour se pr\'eparer \`a ces exercices, on pourra rappeler les sch\'emas des orbitales s, $p_x$, $p_y$, $p_z$ selon un rep\`ere impos\'e}.
 
+\begin{center}
+\includegraphics[height=9.5cm]{figure/spheriques.eps}\\
+\end{center}
 
 \exo{D\'efinition}
 \begin{enumerate}[\bf 1)]
-\item   Rappelez l'expression du recouvrement $S_{ab}$, entre une orbitale $ \chi_a(r,\theta,\phi)$, et  $\chi_b(r,\theta,\phi)$.
-\item  Que vaut exactement cette int\'egrale si $ \chi_a(r,\theta,\phi)=\chi_b(r,\theta,\phi)=\chi(r,\theta,\phi)$.
+\item   Rappelez l'expression du recouvrement $S_{ab}$, entre une orbitale $ \chi_a(x,y,z)$, et
+$\chi_b(x,y,z)$.
+\item  Que vaut exactement cette int\'egrale si $ \chi_a(x,y,z)=\chi_b(x,y,z)=\chi(x,y,z)$.
 \item    Montrez graphiquement que les orbitales $2s_A$ et $2p_{z_{A}}$ (centr\'ee sur le m\^eme atome A), ont un recouvrement nul. Expliquez.
 %\item    A quoi correspond la combinaison  $2s_A+2p_{z_{A}}$~? 
 \end{enumerate} %\exo{Variation du Recouvrement avec la distance}
@@ -66,7 +70,7 @@ a le plus de chance de se trouver. M\^eme quand ces orbitales ne se touchent pas
 graphiquement, on a un recouvrement.
 
 \begin{enumerate}
-\item On consid\`ere un atome qui se rapproche (suivant l'axe $z$) d'un atome de carbone.
+\item On consid\`ere deux orbitales qui s'approchent l'une de l'autre.
 Dessiner l'allure de l'\'evolution du recouvrement entre les diff\'erentes orbitales
 pour $z \in ]-\infty;+\infty[$.
 
@@ -76,77 +80,74 @@ pour $z \in ]-\infty;+\infty[$.
 \includegraphics[width=8.0cm]{figure/overl1.eps}
 \end{center}
 
-\item On se place dans le cadre d'un recouvrement entre une orbitale de type \textit{s}
-sur un atome et une orbitale de type \textit{p} sur un autre atome, situ\'e \`a proximit\'e
-l'un de l'autre de sorte qu'il existe un recouvrement non nul si l'orientation de l'orbitale
-\textit{p} est favorable.
-
-\begin{enumerate}
-\item Classer par ordre de recouvrement croissant les situations suivantes.
-%%FIGURE
-\vspace{-0.3cm}
-\begin{center}
-\includegraphics[width=8.0cm]{figure/overlangle.eps}
-\end{center}
-
-\item On appellera dans la suite $\alpha$ l'angle entre la direction internucl\'eaire et la
-direction de l'orbitale (donn\'ee par la direction de sa phase sombre)~:
-
-%%FIGURE
-\vspace{-0.3cm}
-\begin{center}
-\includegraphics[width=7.5cm]{figure/overlalpha.eps}
-\end{center}
-
-Dessiner les situations \`a $\alpha  = 0^o, \ 180^o, \  270^o$.
-Donner l'allure du recouvrement (toujours \`a distance constante) entre l'orbitale de type
-\textit{s} et cette orbitale de type \textit{p} en fonction de l'angle $\alpha$ entre 0$^o$ et 360$^o$.
-
 \end{enumerate}
-\end{enumerate}
+
+% \item On se place dans le cadre d'un recouvrement entre une orbitale de type \textit{s}
+% sur un atome et une orbitale de type \textit{p} sur un autre atome, situ\'e \`a proximit\'e
+% l'un de l'autre de sorte qu'il existe un recouvrement non nul si l'orientation de l'orbitale
+% \textit{p} est favorable.
+% 
+% \begin{enumerate}
+% \item Classer par ordre de recouvrement croissant les situations suivantes.
+% %%FIGURE
+% \vspace{-0.3cm}
+% \begin{center}
+% \includegraphics[width=8.0cm]{figure/overlangle.eps}
+% \end{center}
+% 
+% \item On appellera dans la suite $\alpha$ l'angle entre la direction internucl\'eaire et la
+% direction de l'orbitale (donn\'ee par la direction de sa phase sombre)~:
+% 
+% %%FIGURE
+% \vspace{-0.3cm}
+% \begin{center}
+% \includegraphics[width=7.5cm]{figure/overlalpha.eps}
+% \end{center}
+% 
+% Dessiner les situations \`a $\alpha  = 0^o, \ 180^o, \  270^o$.
+% Donner l'allure du recouvrement (toujours \`a distance constante) entre l'orbitale de type
+% \textit{s} et cette orbitale de type \textit{p} en fonction de l'angle $\alpha$ entre 0$^o$ et 360$^o$.
+% 
+% \end{enumerate}
 
 \exo{Matrice de recouvrement}
 
-Dirac a propos\'e la notation suivante pour le recouvrement $S_{ij}$ 
-entre deux orbitales $\chi_i$ et $\chi_j$~:
-
-\[
-S_{ij} = \langle \chi_i | \chi_j \rangle
-\]
+%Dirac a propos\'e la notation suivante pour le recouvrement $S_{ij}$ 
+%entre deux orbitales $\chi_i$ et $\chi_j$~:
+%
+%\[
+%S_{ij} = \langle \chi_i | \chi_j \rangle
+%\]
 
 Dans cet exercice le rep\`ere est defini de la mani\`ere suivante~:
 
 \includegraphics[width=2cm]{figure/AB_repere_yx.eps}
 
-\begin{enumerate}
+%\item Sur un seul atome A, que vaut le recouvrement dans les cas suivants~:
+%\begin{enumerate}
+%\item $\chi_i = 1s_\textsc{a}$ et $\chi_j = 1s_\textsc{a}$~;
+%\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2s_\textsc{a}$~;
+%\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2p_{x\textsc{a}}$~;
+%\end{enumerate}
 
-\item Sur un seul atome A, que vaut le recouvrement dans les cas suivants~:
-\begin{enumerate}
-\item $\chi_i = 1s_\textsc{a}$ et $\chi_j = 1s_\textsc{a}$~;
-\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2s_\textsc{a}$~;
-\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2p_{x\textsc{a}}$~;
-\end{enumerate}
-
-\item Pour deux atomes, A et B, s\'epar\'es d'une distance de liaison 
-(environ 1.0-2.0~\AA), que vaut le recouvrement dans les cas suivants~: 
-\begin{enumerate}
-\item $\chi_i = 1s_\textsc{a}$ et $\chi_j = 1s_\textsc{b}$~;
-\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2s_\textsc{b}$~;
-\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2p_{x\textsc{b}}$~;
-\end{enumerate}
-
-\item Remplissez le tableau suivant, qu'on appelle la matrice recouvrement~:
+Pour deux atomes, A et B, s\'epar\'es d'une distance de liaison 
+(environ 1.0-2.0~\AA), remplissez le tableau suivant avec les valeurs 0, 1 et $+$ ou $-$
+selon la signe du recouvrement~:
+%\begin{enumerate}
+%\item $\chi_i = 1s_\textsc{a}$ et $\chi_j = 1s_\textsc{b}$~;
+%\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2s_\textsc{b}$~;
+%\item $\chi_i = 2s_\textsc{a}$ et $\chi_j = 2p_{x\textsc{b}}$~;
+%\end{enumerate}
+%
+%\item Remplissez le tableau suivant~:
 
 \begin{tabular}{|c||c|c|c|c|c|}
 \hline
                    & $2s_\textsc{a}$ & $2s_\textsc{b}$ & $2p_{x\textsc{b}}$ & $2p_{y\textsc{b}}$ & $2p_{z\textsc{b}}$ \\
 \hline\hline
-$2s_\textsc{a}$     &&&&& \\ \hline
+$2s_\textsc{a}$     & 1 & $+$ & $-$ & 0 & 0 \\ \hline
 $2s_\textsc{b}$     &&&&& \\ \hline
 $2p_{x\textsc{b}}$  &&&&& \\ \hline
 $2p_{y\textsc{b}}$  &&&&& \\ \hline
 $2p_{z\textsc{b}}$  &&&&& \\ \hline
 \end{tabular}
-
-
-\end{enumerate}

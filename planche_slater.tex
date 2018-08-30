@@ -3,21 +3,101 @@
 \meth{Application du mod\`ele de Slater \`a l'h\'elium}
 On se propose dans ce probl\`eme de d\'eterminer l'\'energie de premi\`ere ionisation de l'h\'elium \`a partir du mod\`ele de Slater.
 \begin{enumerate}[\bf 1)]
-\item Quelle est la valeur du num\'ero atomique $Z$ de l'atome d'h\'elium~?
-\item Quelle est la structure \'electronique de cet \'el\'ement dans son \'etat fondamental~?
-\item Donnez la valeur des nombres quantiques de chaque \'electron.
-\item Sachant que l'effet d'\'ecran d'un \'electron 1$s$ sur un \'electron 1$s$ est d\'ecrit par la constante de Slater $\sigma_{1s}=0.30$, calculez la charge nucl\'eaire effective ressentie par un tel \'electron. 
+\item Quelle est la valeur du num\'ero atomique $Z$ de l'atome d'h\'elium~?\\
+\textsl{Le numéro atomique de l'hélium est égal au nombre de protons contenus dans son noyau.
+Par lecture sur le tableau périodique, on voit que Z=2. }
+\item Quelle est la structure \'electronique de cet \'el\'ement dans son \'etat fondamental~?\\
+\textsl{Dans son état fondamental, la configureation électronique de l'atome d'hélium
+est 1s$^2$.}
+\item Donnez la valeur des nombres quantiques de chaque \'electron.\\
+\textsl{La case quantique 1s contient deux électrons pour l'état fondamental de l'hélium.
+Chaque électron est caractérisé par 4 nombres quantiques: n, l, m (noté parfois m$_l$)
+et m$_s$.
+Les trois premiers caractérisent l'orbitale
+dans laquelle ils se trouvent et m$_s$ caractérise une propriété instrinsèque de l'électron
+qu'on appelle le spin.
+Les deux électrons considérés sont dans l'orbitale 1s (n=1, l=0, m=0) et diffèrent
+par leurs spins ($\pm\frac{1}{2}$), donc:\\
+électron 1: n=1 ; l=0 ; m=0 ; m$_s$=$+\frac{1}{2}$\\
+électron 2: n=1 ; l=0 ; m=0 ; m$_s$=$-\frac{1}{2}$}
+\item Sachant que l'effet d'\'ecran d'un \'electron 1$s$ sur un \'electron 1$s$ est d\'ecrit par la constante de Slater $\sigma_{1s/1s}=0.30$, calculez la charge nucl\'eaire effective ressentie par un tel \'electron. 
+\textsl{%
+La charge nucléaire effective $Z^*$ parfois notée $Z_\text{eff}$ est égale à la charge totale du noyau à laquelle on retranche les effets
+d'écran des électrons qui peuvent se trouver entre l'électron considéré et le noyau.
+Dans le cas de l'état fondamental de l'hélium, on calcule:
+\begin{align*}
+Z^*_1s(He) &= Z(He) - \sigma_{1s/1s}\\
+           &= 2 - 0,30          \\
+           &= 1,7
+\end{align*}
+}
 \item En d\'eduire l'\'energie d'un \'electron de l'atome d'h\'elium.
-\item En d\'eduire l'\'energie $E(\textrm{He})$ de l'atome d'h\'elium dans son \'etat fondamental.
-\item Comment appelle-t-on un cation du type de He$^+$~?  En d\'eduire l'\'energie $E(\textrm{He}^+)$.
-\item Montrez que l'\'energie de premi\`ere ionisation de l'h\'elium vaut $E_\textrm{ionis.}(\textrm{He})=24.2$~eV.
+\textsl{%
+Dans le cadre du modèle de Slater, l'énergie d'un électron contenu dans une orbitale dont le
+nombre quantique principal est n est égal à: $E_n (eV)= -13,6 \times \frac{(Z^*)^2}{n^2}$.
+On trouve donc:
+\begin{align*}
+E_1s(He) = &= -13,6 \times \frac{1,7^2}{1^2}\\
+           &= -39,30 eV
+\end{align*}
+}
+\item En d\'eduire l'\'energie $E(\textrm{He})$ de l'atome d'h\'elium dans son \'etat fondamental.\\
+\textsl{%
+L'énergie d'un atome est égale à la somme des énergies des électrons qui le composent.
+L'énergie totale de l'atome d'hélium est donc:
+\begin{align*}
+E(He) &= 2\times E_1s(He)\\
+      &= -78,60 eV
+\end{align*}
+}
+\item Comment appelle-t-on un cation du type de He$^+$~?  En d\'eduire l'\'energie $E(\textrm{He}^+)$.\\
+\textsl{%
+Un cation du type He$^+$ est formé d'un noyau et d'un seul électron.
+On appelle ce genre de système un hydrogénoïde.
+}
+\item Montrez que l'\'energie de premi\`ere ionisation de l'h\'elium vaut $E_\textrm{ionis.}(\textrm{He})=24.2$~eV.\\
+\textsl{%
+L'energie de première ionisation de l'hélium est l'énergie à fournir pour arracher un
+électron à l'hélium neutre.
+Cette énergie est égale à la différence entre l'énergie de l'état final (He$^+$)
+et celle de l'état initial (He).
+Nous connaissons E(He), il nous fauta calculer E(He$^+$).
+Dans le cas de He$^+$, il n'y a qu'un seul électron autour du noyau, donc aucun autre électron ne
+peut écranter la charge du noyau. On a donc $Z^*_1s(He^+)= 2 - 0 = 2$.
+L'énergie totale de l'ion He$^+$ est donc:
+\begin{align*}
+E(He^+) &= 1\times -13,6 \times \frac{2^2}{1^2}\\
+        &= -54,40 eV
+\end{align*}
+L'énergie de première ionisation de l'hélium est donc égale à:
+\begin{align*}
+E_\text{ionis.} &= E(He^+) - E(He)\\
+                &= 24,20 eV
+\end{align*}
+}
 \item Quelle est la valeur minimale de la fr\'equence de la radiation que l'on doit utiliser pour ioniser 
-une fois l'h\'elium~? 
+une fois l'h\'elium~? \\
+\textsl{%
+Pour ioniser l'hélium, il faut fournir une longueur d'onde dont l'énergie soit de 24,20~eV.
+On sait que l'énergie d'un photon est égale à $E=h\frac{c}{\lambda}$ avec $h$ la constante
+de Planck, $c$ la vitesse de la lumière et $\lambda$ la longueur d'onde.
+Pour obtenir une longueur d'onde en m, il faut passer toutes les valeurs dans la système international
+(énergie en joules, distance en m, temps en seconde).
+Or $1eV=1,6\times10^{-19}J$, donc:
+\begin{align*}
+E_\text{ionis.} &= h\frac{c}{\lambda}\\
+\Leftrightarrow \lambda &=  h\frac{c}{E_\text{ionis.}}\\
+                &= 6,626\times 10^{-34} \times \frac{3\times 10^{8}}{24,2\times 1,6\times10^{-19}}\\
+                &= 51,3\times10^{-9} m = 51,3 nm
+\end{align*}
+}
 \end{enumerate}
 %--------------------------------------------------------------------------
 \exo{Application du mod\`ele de Slater au magn\'esium}
 \begin{enumerate}[\bf 1)]
 \item Quelle est la configuration \'electronique du magn\'esium dans l'\'etat fondamental~?
+\item Donner la multiplicité de spin de Mg et de Mg+.
+Donner les nombres quantiques associés aux électrons de valence du Mg.
 \item D\'eterminez la charge nucl\'eaire effective puis l'\'energie de chaque \'electron.
 \item \'Evaluez l'\'energie totale d'un atome de magn\'esium et d'un ion Mg$^+$.
 \item En d\'eduire la valeur de l'\'energie de premi\`ere ionisation du magn\'esium.
@@ -25,7 +105,7 @@ une fois l'h\'elium~?
 %--------------------------------------------------------------------------
 \exo{Rayon atomique}
 \begin{enumerate}[\bf 1)]
-\item Donnez la configuration \'electronique des atomes de la deuxi\`eme p\'eriode du tableau p\'eriodique.
+\item Donnez la configuration \'electronique et la multiplicité de spin des atomes de la deuxi\`eme p\'eriode du tableau p\'eriodique.
 \item Compl\'etez le tableau ci-dessous. Les valeurs de $n$, $Z_{eff}$ et $r$ ne sont \`a calculer \textbf{que} pour 
 la derni\`ere orbitale occup\'ee.
 
@@ -62,6 +142,7 @@ $r$        &        &        & 1.54 $a_0$ & 1.23 $a_0$ & 1.03 $a_0$ & 0.88 $a_0$
 \item Calculer les \'energies des atomes suivants~: C, He, Li, Ne, Al.
 \item Calculer les \'energies de leurs monocations~: C$^+$, He$^+$, Li$^+$, Ne$^+$, Al$^+$.
 %\marginpar{Paola: correzione PI He, Al}
-\item Pour chaque esp\`ece, retouver les suivantes valeurs pour les potentiels de premi\`ere ionisation (en eV)~:
+%\item Pour chaque esp\`ece, retouver les suivantes valeurs pour les potentiels de premi\`ere ionisation (en eV)~:
+\item Pour chaque esp\`ece, calculer les énergies de première ionisation (en eV); retrouver les valeurs suivantes~:
 11,5 (C); 24,2 (He); 5,7 (Li); 16,0 (Ne); 10,8 (Al).
 \end{enumerate}

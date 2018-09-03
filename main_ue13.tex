@@ -1,4 +1,4 @@
-\documentclass[12pt,french,dvips]{report} 
+\documentclass[12pt,a4paper,french,dvips,openright,twoside]{report} 
 
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
@@ -43,44 +43,12 @@
 \newcommand{\meth}[1]{\setlength{\parskip}{0.pt}\begin{methodologie} \emph{\textbf{- #1}} \end{methodologie}}
 \newcommand{\sol}[1]{\setlength{\parskip}{0.pt}\begin{correction} \emph{\textbf{- #1}} \end{correction}}
 %\newcommand{\pb}[1]{\setlength{\parskip}{0.pt}\begin{probleme} \emph{\textbf{- #1}} \end{probleme}}
-%%% commande titre TD
-\newcommand{\titreTD}[2]{\addtocounter{numTD}{1}
-\begin{center}
-\Large\textbf{TD n$^\textrm{\small o}$#1 - #2}
-\vspace{0.5cm}
-\end{center}
-}
 \setcounter{secnumdepth}{0}
-\renewcommand{\titreTD}[2]{\section{#2}}
+\newcommand{\titreTD}[2]{\section{#2}}
 
 \newpsobject{showgrid}{psgrid}{subgriddiv=1,griddots=10,gridlabels=6pt}
 
 \def\thesection{\arabic{section}}
-
-\title{{\Huge \textbf{      \\ 
-TRAVAUX DIRIG\'ES  \\[1.5cm] 
-UE Atomes et Liaison chimique\\
-\textsl{Atomes et Liaison chimique}}}\\[3cm]
-%{\large     
-%\begin{tabular}{ll}
-%\multicolumn{2}{l}{\textbf{Site St.-J\'er\^ome~:}} \\
-%Yannick Carissan & yannick.carissan@univ-amu.fr    \\
-%Paola Nava       & paola.nava@univ-amu.fr          \\%& tel: 0491288815 \\
-%\multicolumn{2}{l}{\textbf{Site Aix-Montperrin~:}} \\
-%St\'ephane Humbel & stephane.humbel@univ-amu.fr    \\
-%Yannick Carissan & yannick.carissan@univ-amu.fr    \\
-%\multicolumn{2}{l}{\textbf{Responsable inter-site~:} Vincent Ledentu} \\
-%\end{tabular}
-%}
-\vspace{2cm}}
-\author{Portail Curie}
-\date{2018-2019\\\includegraphics[height=4cm]{figure/QRcode_fichier_TD.eps}}
-
-\begin{document}
-
-%\newcommand{\monoorb}{\includegraphics[width=0.5cm]{fig_at/alpha.eps}}
-%\newcommand{\fullorb}{\includegraphics[width=0.5cm]{fig_at/alphabeta.eps}}
-%\newcommand{\emptyorb}{\includegraphics[width=0.5cm]{fig_at/empty.eps}}
 
 \newcommand{\secd}{\alpha - \varepsilon_i}
 \newcommand{\bulletd}{\small \begin{tabular}{c} $\bullet$ \\[-0.3cm] $\bullet$ \\ \end{tabular}}
@@ -88,16 +56,20 @@ UE Atomes et Liaison chimique\\
 \newcommand{\bra}{\left\langle}
 \newcommand{\ket}{\right\rangle}
 
+\begin{document}
+
+\title{{\Huge \textbf{      \\ 
+TRAVAUX DIRIG\'ES  \\[1.5cm] 
+UE Atomes et Liaison chimique\\
+\textsl{Atomes et Liaison chimique}}}}
+\author{Portail Curie}
+\date{\includegraphics[height=4cm]{figure/QRcode_fichier_TD.eps}\\2018-2019}
+
 \pagestyle{empty}
 \maketitle
 
-\cleardoublepage
-
-
-\pagestyle{plain}
+%\pagestyle{plain}
 \tableofcontents
-
-\cleardoublepage
 
 \include{periodique}
 \include{planche_slater}
@@ -110,7 +82,7 @@ UE Atomes et Liaison chimique\\
 \include{planche_wf}
 \include{planche_lewis}
 
-\cleardoublepage
+%\cleardoublepage
 
 \pagestyle{empty}
 \include{annexe}

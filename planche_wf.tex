@@ -1,15 +1,15 @@
 \titreTD{\thenumTD}{Mod\`ele ondulatoire}
 
 \begin{center}
-\includegraphics[height=9.5cm]{figure/spheriques.eps}\\
+\includegraphics[height=9.5cm]{figure/spheriques_ok.eps}\\
 \end{center}
 
 \exo{Fonctions de type ns}
-
 Les trac\'es de la partie radiale des orbitales $1s$, $2s$ et $3s$ de l'atome d'hydrog\`ene 
 sont repr\'esent\'es ci-apr\`es.
 Tracez de mani\`ere qualitative la densit\'e de probabilit\'e radiale pour les orbitales
-$1s$, $2s$ et $3s$. Commentez. 
+$1s$, $2s$ et $3s$. Commentez.
+\newpage
 
 \begin{center}
 \includegraphics[angle=90,width=0.99\textwidth]{figure/rad1s.eps}
@@ -120,7 +120,7 @@ densit\'e \'electronique pour l'ensemble des points $M$ situ\'es sur les axes $O
 \item Pour l'orbitale $2p_z$, donnez en fonction de $r/a_0$ l'expression de la 
 densit\'e \'electronique pour l'ensemble des points $M$ situ\'es que sur l'axe $Oz$. 
 Montrez que cette fonction $D(M)$ est maximale pour $r/a_0=2$ 
-(tant vers les $z$ positifs, $\theta=0$, que vers les $z$ n\'egatifs, $\theta=180\deg$).
+(tant vers les $z$ positifs, $\theta=0$, que vers les $z$ n\'egatifs, $\theta=180^o$).
 
 \item Pour quelle valeur de $\theta$ l'orbitale $2p_z$ vaut-elle z\'ero~? Quel est donc le plan nodal~?
 Quelle est la densit\'e sur ce plan nodal~?
@@ -141,8 +141,40 @@ Commentez.
 %\] 
 
 \exo{R\'ecapitulatif sur les orbitales atomiques}
-Soit un tableau relatif aux fonctions d'onde de l'atome d'hydrog\`ene.
+%Soit un tableau relatif aux fonctions d'onde de l'atome d'hydrog\`ene.
 
+On donne dans le d\'esordre des expressions de parties radiales~:
+$$
+\textbf{a}=2\left(a_0^{-3/2}\right)e^{-r/a_0} \qquad \qquad
+\textbf{b}=\frac{1}{2\sqrt{6}}\left(a_0^{-5/2}\right)r.e^{-r/2a_0}
+\textbf{c}=\frac{1}{2\sqrt{\pi}}\qquad
+$$
+$$
+\textbf{d}=\frac{1}{\sqrt{2}}\left(a_0^{-3/2}\right)\left(1-\frac{r}{2a_0}\right)e^{-r/2a_0}\qquad
+$$
+et des expressions de parties angulaires~:\\
+$$
+\textbf{e}=\frac{\sqrt{3}}{2\sqrt{\pi}}\sin{\theta}\sin{\varphi} \qquad \qquad
+\textbf{f}=\frac{\sqrt{3}}{2\sqrt{\pi}}\sin{\theta}\cos{\varphi}\qquad
+\textbf{g}=\frac{\sqrt{3}}{2\sqrt{\pi}}\cos{\theta}
+$$
+On rappelle que les parties angulaires des orbitales $s$ sont constantes.
+
+\begin{enumerate}[\bf 1)]
+\item Compl\'etez le tableau donné à la fin de cet exercice
+        en indiquant les valeurs des trois nombres quantiques orbitaux (ou nombres quantiques d'espace) pour chaque fonction d'onde.\\
+
+\textbf{Remarque~:} pour les fonctions $2p_x$, $2p_y$, $2p_z$, seule $2p_z$ a un nombre $m_l$ déterminé: les fonctions $2p_x$ et $2p_y$ sont des mélanges des orbitales pour lesquelles $m_l=\pm 1$.
+\item On donne les valeurs des \'energies de ces fonctions d'onde~: $-3,$4~eV et $-13,$6~eV. Placez ces valeurs dans les cases convenables du tableau. Pourquoi n'y a-t-il que deux valeurs~?
+
+\item Compl\'etez le tableau ci-dessus en pla\c{c}ant dans la case correspondant \`a chaque fonction d'onde, ($1s$, $2s$, $2p_x$, $2p_y$, $2p_z$) les lettres attribu\'ees aux fonctions radiales et angulaires convenables (\textbf{a}, \textbf{b}, \textbf{c}, \textbf{d}, \textbf{e}, \textbf{f} ou \textbf{g}, ci-dessus).\\
+
+\textbf{Remarque~:} une m\^eme fonction peut intervenir dans diff\'erentes cases~: justifiez.
+\item Rappelez la forme de chaque orbitale et précisez~:
+\begin{enumerate}
+\item le signe que prend la fonction d'onde dans les diff\'erentes r\'egions de l'espace~;
+\item les surfaces nodales s'il y en a.
+%\item les propri\'et\'es directionnelles et \'eventuellement les axes de r\'evolution.
 \begin{center}
 \begin{tabular}{|l|c|c|c|c|c| c|}\hline
 orbitales & $R(r)$ & $Y(\theta,\varphi)$ & $E$ (eV) & $n$ & $l$ &  $m_l$\\\hline
@@ -154,36 +186,6 @@ $2p_z$ &           &                     & & & &\\\hline
 \end{tabular}
 \end{center}
 
-On donne dans le d\'esordre les expressions des parties radiales et des parties angulaires norm\'ees s\'epar\'ement~:\\
-$$
-\textbf{a}=2\left(a_0^{-3/2}\right)e^{-r/a_0} \qquad \qquad
-\textbf{b}=\frac{\sqrt{3}}{2\sqrt{\pi}}\sin{\theta}\sin{\varphi} \qquad \qquad
-\textbf{c}=\frac{1}{2\sqrt{6}}\left(a_0^{-5/2}\right)r.e^{-r/2a_0}
-$$
-$$
-\textbf{d}=\frac{1}{2\sqrt{\pi}}\qquad
-\textbf{e}=\frac{1}{\sqrt{2}}\left(a_0^{-3/2}\right)\left(1-\frac{r}{2a_0}\right)e^{-r/2a_0}\qquad
-\textbf{f}=\frac{\sqrt{3}}{2\sqrt{\pi}}\sin{\theta}\cos{\varphi}\qquad
-\textbf{g}=\frac{\sqrt{3}}{2\sqrt{\pi}}\cos{\theta}
-$$
-
-\begin{enumerate}[\bf 1)]
-\item Compl\'etez le tableau ci-dessus en pla\c{c}ant dans la case correspondant \`a chaque fonction d'onde, ($1s$, $2s$, $2p_x$, $2p_y$, $2p_z$) les lettres attribu\'ees aux fonctions radiales et angulaires convenables (\textbf{a}, \textbf{b}, \textbf{c}, \textbf{d}, \textbf{e}, \textbf{f} ou \textbf{g}, ci-dessus).\\
-
-\textbf{Remarque~:} une m\^eme fonction peut intervenir dans diff\'erentes cases~: justifiez.
-
-\item On donne les valeurs des \'energies de ces fonctions d'onde~: $-3,$4~eV et $-13,$6~eV. Placez ces valeurs dans les cases convenables du tableau. Pourquoi n'y a-t-il que deux valeurs~?
-
-\item Compl\'etez le tableau en indiquant les valeurs des trois nombres quantiques orbitaux (ou nombres quantiques d'espace) pour chaque fonction d'onde.\\
-
-\textbf{Remarque~:} pour les fonctions $2p_x$, $2p_y$, $2p_z$, seule $2p_z$ a un nombre $m_l$ déterminé: les fonctions $2p_x$ et $2p_y$ sont des mélanges des orbitales pour lesquelles $m_l=\pm 1$.
-
-\item Indiquez sch\'ematiquement les volumes de plus grande probabilit\'e de pr\'esence pour un \'electron $1s$, $2s$, $2p_x$, $2p_y$ ou $2p_z$, gravitant autour d'un noyau situ\'e au centre d'un rep\`ere orthonorm\'e.
-\item Pr\'ecisez pour chaque orbitale :
-\begin{enumerate}
-\item le signe que prend la fonction d'onde dans les diff\'erentes r\'egions de l'espace~;
-\item les surfaces nodales s'il y en a.
-%\item les propri\'et\'es directionnelles et \'eventuellement les axes de r\'evolution.
 \end{enumerate}
 \end{enumerate}
 

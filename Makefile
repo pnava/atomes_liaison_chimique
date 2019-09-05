@@ -12,3 +12,13 @@ default :
 correction :
 	latex correction.tex
 	dvipdf correction.dvi
+
+booklet:
+	latex ${input}.tex
+	latex ${input}.tex
+	latex ${input}.tex
+	dvips -t a4 ${input}.dvi -o
+	psbook < ${input}.ps > ${input}_.ps
+	psnup -2  < ${input}_.ps > ${input}.ps
+	ps2pdf ${input}.ps ${input}.pdf
+

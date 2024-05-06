@@ -11,4 +11,4 @@ default :
 
 correction :
 	latex correction.tex
-	dvipdf correction.dvi
+	dvipdfm correction.dvi 
